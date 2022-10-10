@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Tomas</title>
+  </head>
+  <body>
+    <header>
+      <h2>Tomas CV</h2>
+      <nav class="desktop-nav">
+        <ul>
+          <li>ABOUT</li>
+          <li>SKILLS</li>
+          <li>PORTFOLIO</li>
+          <li>EXPERIENCE</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav">
+        <input id="mobile-menu-toggler" type="checkbox" />
+        <label for="mobile-menu-toggler">
+          <img src="assets/bars.svg" alt="mobile meniu icon" />
+          <ul class="mobile-ul">
+            <li>ABOUT</li>
+            <li>-</li>
+            <li>SKILLS</li>
+            <li>-</li>
+            <li>PORTFOLIO</li>
+            <li>-</li>
+            <li>EXPERIENCE</li>
+            <li>-</li>
+            <li>CONTACT</li>
+          </ul>
+        </label>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="assets/tomas.jpg" alt="my photo" class="photo" />
+      <h2 class="hero-header">Tomas Vareika</h2>
+      <h3 class="hero-subheader">WEB DEVELOPER</h3>
+      <form method="get" action="assets/cv.pdf" target="_blank">
+        <button class="hero-button" type="submit">Download CV</button>
+      </form>
+      <a href="https://www.linkedin.com/in/tomas-vareika-bb5b211ba/" target="_blank" class="linked-in-button">
+        <img src="assets/linkedin.png" alt="linked in logo" />
+      </a>
+    </section>
+  </body>
+</html>
