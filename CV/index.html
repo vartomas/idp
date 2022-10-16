@@ -22,9 +22,9 @@
       <nav class="mobile-nav">
         <input id="mobile-menu-toggler" type="checkbox" />
         <label for="mobile-menu-toggler">
-          <img src="assets/bars.svg" alt="mobile meniu icon" />
+          <img class="bars" src="assets/bars.svg" alt="mobile meniu icon" />
           <ul class="mobile-ul">
-            <li>ABOUT</li>
+            <li><a href="#about">ABOUT</a></li>
             <li>-</li>
             <li>SKILLS</li>
             <li>-</li>
@@ -38,7 +38,7 @@
       </nav>
     </header>
 
-    <section class="hero">
+    <section id="hero">
       <img src="assets/tomas.jpg" alt="my photo" class="photo" />
       <h2 class="hero-header">Tomas Vareika</h2>
       <h3 class="hero-subheader">WEB DEVELOPER</h3>
@@ -49,5 +49,41 @@
         <img src="assets/linkedin.png" alt="linked in logo" />
       </a>
     </section>
+
+    <section id="about">
+      <article class="card about-card">
+        <div class="about-side">
+          <h2>About</h2>
+          <br />
+          <p>Hello! I am Tomas Vareika. Web Developer.</p>
+          <br />
+          <p>
+            I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly
+            grow and improve based on user metrics.
+          </p>
+        </div>
+        <div class="basic-information-side">
+          <h2>Basic Information</h2>
+          <div>
+            <ul>
+              <li><strong>AGE:</strong></li>
+              <li><strong>EMAIL:</strong></li>
+              <li><strong>PHONE:</strong></li>
+              <li><strong>ADDRESS:</strong></li>
+              <li><strong>LANGUAGE:</strong></li>
+            </ul>
+            <ul>
+              <li>37</li>
+              <li>tomas@tomas.lt</li>
+              <li>+37012312345</li>
+              <li>Vilnius</li>
+              <li>English, Lithuanian</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills"></section>
   </body>
 </html>

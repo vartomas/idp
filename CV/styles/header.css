@@ -23,7 +23,7 @@ img {
   display: none;
 }
 
-.mobile-nav > label {
+.bars {
   cursor: pointer;
 }
 

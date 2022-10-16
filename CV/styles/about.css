@@ -1,0 +1,47 @@
+#about {
+  display: flex;
+  justify-content: center;
+  margin: 36px 16px 0 16px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.basic-information-side {
+  margin-top: 24px;
+}
+
+.basic-information-side > div {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+}
+
+.basic-information-side ul {
+  list-style: none;
+  width: 50%;
+}
+
+.basic-information-side li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+@media only screen and (min-width: 800px) {
+  .about-card {
+    flex-direction: row;
+  }
+
+  .about-side {
+    width: 50%;
+    padding-right: 16px;
+  }
+
+  .basic-information-side {
+    margin-top: 0;
+    width: 50%;
+    padding-left: 16px;
+  }
+}
