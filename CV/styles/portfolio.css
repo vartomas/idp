@@ -1,0 +1,93 @@
+#portfolio {
+  margin: 52px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-card {
+  margin-top: 16px;
+}
+
+#portfolio > h2 {
+  text-align: center;
+}
+
+#portfolio > article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#portfolio figure {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#portfolio > article > figure:not(:first-child) {
+  margin-top: 8px;
+}
+
+#portfolio img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+#portfolio figure:hover img {
+  transform: scale(1.2);
+}
+
+#portfolio figure:not(:hover) img {
+  transform: scale(1.1);
+}
+
+#portfolio figcaption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+  #portfolio > article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #portfolio article figure {
+    width: 48%;
+  }
+
+  #portfolio figcaption {
+    transform-origin: 0 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #portfolio figure:not(:hover) figcaption {
+    transform: scale(0);
+  }
+
+  #portfolio figure:hover figcaption {
+    transform: scale(1);
+  }
+
+  #portfolio > article > figure:not(:first-child) {
+    margin-top: 0px;
+  }
+
+  #portfolio > article > figure:nth-child(n + 3) {
+    margin-top: 16px;
+  }
+}

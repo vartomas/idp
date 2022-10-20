@@ -9,14 +9,13 @@
   </head>
   <body>
     <header>
-      <h2>Tomas CV</h2>
+      <h2><a href="index.html">Tomas CV</a></h2>
       <nav class="desktop-nav">
         <ul>
-          <li>ABOUT</li>
-          <li>SKILLS</li>
-          <li>PORTFOLIO</li>
-          <li>EXPERIENCE</li>
-          <li>CONTACT</li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
         </ul>
       </nav>
       <nav class="mobile-nav">
@@ -26,13 +25,11 @@
           <ul class="mobile-ul">
             <li><a href="#about">ABOUT</a></li>
             <li>-</li>
-            <li>SKILLS</li>
+            <li><a href="#skills">SKILLS</a></li>
             <li>-</li>
-            <li>PORTFOLIO</li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
             <li>-</li>
-            <li>EXPERIENCE</li>
-            <li>-</li>
-            <li>CONTACT</li>
+            <li><a href="#experience">EXPERIENCE</a></li>
           </ul>
         </label>
       </nav>
@@ -84,6 +81,60 @@
       </article>
     </section>
 
-    <section id="skills"></section>
+    <section id="skills">
+      <h2>Professional skills</h2>
+      <article class="card skills-card">
+        <ul class="left-list">
+          <li class="skill-header"><span>HTML</span><span>80%</span></li>
+          <li class="skill-bar"><span class="html-bar"></span></li>
+          <br />
+          <li class="skill-header"><span>CSS</span><span>80%</span></li>
+          <li class="skill-bar"><span class="css-bar"></span></li>
+          <br />
+          <li class="skill-header"><span>JS</span><span>90%</span></li>
+          <li class="skill-bar"><span class="js-bar"></span></li>
+        </ul>
+        <ul class="right-list">
+          <li class="skill-header"><span>TS</span><span>80%</span></li>
+          <li class="skill-bar"><span class="ts-bar"></span></li>
+          <br />
+          <li class="skill-header"><span>REACT</span><span>90%</span></li>
+          <li class="skill-bar"><span class="react-bar"></span></li>
+          <br />
+          <li class="skill-header"><span>NODE/EXPRESS</span><span>60%</span></li>
+          <li class="skill-bar"><span class="node-bar"></span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <article class="card portfolio-card">
+        <figure>
+          <img src="assets/portfolio-1.jpg" alt="portfolio 1 img" />
+          <figcaption>Map painting project</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/portfolio-2.jpg" alt="portfolio 1 img" />
+          <figcaption>Startup project</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/portfolio-3.jpg" alt="portfolio 1 img" />
+          <figcaption>Food order project</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/portfolio-4.jpg" alt="portfolio 1 img" />
+          <figcaption>Web advertising project</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <article class="card experience-card">
+        <header></header>
+        <div></div>
+      </article>
+    </section>
   </body>
 </html>
