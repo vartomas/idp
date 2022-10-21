@@ -1,12 +1,13 @@
 header {
   width: 100%;
-  padding: 16px;
+  padding: 4px 16px 4px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   color: white;
   z-index: 2;
+  transition: background-color 0.2s ease-in-out;
 }
 
 #mobile-menu-toggler {
